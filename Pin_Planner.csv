@@ -14,13 +14,14 @@
 
 # Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 # File: C:\Users\ML\Documents\GitHub\Stopwatch\Pin_Planner.csv
-# Generated on: Sat Aug 08 01:09:41 2020
+# Generated on: Sat Aug 08 07:51:53 2020
 
 # Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
 
 To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
-KEY[1],Input,PIN_B8,7,B7_N0,PIN_B8,2.5 V,,,,,
-KEY[0],Input,PIN_A7,7,B7_N0,PIN_A7,2.5 V,,,,,
+KEY[1],Input,PIN_A7,7,B7_N0,PIN_A7,2.5 V,,,,,
+KEY[0],Input,PIN_B8,7,B7_N0,PIN_B8,2.5 V,,,,,
+LEDR,Input,PIN_D13,7,B7_N0,PIN_H19,,,,,,
 SW,Input,PIN_F15,7,B7_N0,PIN_F15,2.5 V,,,,,
 Seg7[27],Output,PIN_E17,6,B6_N0,PIN_E17,2.5 V,,,,,
 Seg7[26],Output,PIN_D19,6,B6_N0,PIN_D19,2.5 V,,,,,
@@ -50,6 +51,7 @@ Seg7[3],Output,PIN_C16,7,B7_N0,PIN_C16,2.5 V,,,,,
 Seg7[2],Output,PIN_C15,7,B7_N0,PIN_C15,2.5 V,,,,,
 Seg7[1],Output,PIN_E15,7,B7_N0,PIN_E15,2.5 V,,,,,
 Seg7[0],Output,PIN_C14,7,B7_N0,PIN_C14,2.5 V,,,,,
-clk_50M,Input,,,,PIN_H19,,,,,,
+clk_50M,Input,,,,PIN_N5,,,,,,
 decimalPoint,Output,PIN_D22,6,B6_N0,PIN_D22,2.5 V,,,,,
-reset,Input,PIN_C11,7,B7_N0,PIN_C11,2.5 V,,,,,
+reset,Input,PIN_B14,7,B7_N0,PIN_B14,2.5 V,,,,,
+timerSW,Input,PIN_C10,7,B7_N0,PIN_C10,2.5 V,,,,,

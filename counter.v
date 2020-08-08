@@ -1,6 +1,6 @@
 module counter(clock, enable, reset, Q, Q_out);
 	input clock, enable, reset;
-	output reg Q_out;			// send bit to Hex1 (7seg1)
+	output reg Q_out;				// send bit to Hex1 (7seg1)
 	output reg[3:0] Q; 			// output reg for Hex0 (7seg 0)
 
 	always @( posedge clock) begin

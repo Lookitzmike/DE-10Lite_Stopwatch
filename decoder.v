@@ -4,7 +4,7 @@ module decoder(DIG,Seg7);
 	output reg [6:0] Seg7;
 	
 	always@(DIG) begin
-		case(DIG)
+		case(DIG)					  //abcdefg 
 			4'b0000 : Seg7[6:0] = 7'b1000000; // 0
 			4'b0001 : Seg7[6:0] = 7'b1111001; // 1
 			4'b0010 : Seg7[6:0] = 7'b0100100; // 2

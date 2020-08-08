@@ -1,5 +1,5 @@
 Analysis & Synthesis report for UpCounter_Top
-Sat Aug 08 01:10:53 2020
+Sat Aug 08 08:21:13 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,15 +16,30 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "clock_divider:U0"
- 12. Port Connectivity Checks: "counter:C3"
- 13. Port Connectivity Checks: "counter:C2"
- 14. Port Connectivity Checks: "counter:C1"
- 15. Port Connectivity Checks: "counter:C0"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
- 19. Analysis & Synthesis Suppressed Messages
+ 11. Parameter Settings for User Entity Instance: clock_divider:clk_1k
+ 12. Parameter Settings for User Entity Instance: clock_divider:clk_1k|n_bit_counter:COUNT32_DIV
+ 13. Parameter Settings for User Entity Instance: clock_divider:clk_1k|comparator:COMPARE32_DIV
+ 14. Parameter Settings for User Entity Instance: clock_divider:clk_10
+ 15. Parameter Settings for User Entity Instance: clock_divider:clk_10|n_bit_counter:COUNT32_DIV
+ 16. Parameter Settings for User Entity Instance: clock_divider:clk_10|comparator:COMPARE32_DIV
+ 17. Parameter Settings for User Entity Instance: up_timer:T1
+ 18. Parameter Settings for User Entity Instance: up_timer:T1|n_bit_counter:timer32
+ 19. Parameter Settings for User Entity Instance: up_timer:T1|comparator:compare32Timer
+ 20. Parameter Settings for User Entity Instance: n_bit_counter:BCD_0
+ 21. Port Connectivity Checks: "n_bit_counter:BCD_0"
+ 22. Port Connectivity Checks: "up_timer:T1"
+ 23. Port Connectivity Checks: "clock_divider:clk_10"
+ 24. Port Connectivity Checks: "clock_divider:clk_1k|comparator:COMPARE32_DIV"
+ 25. Port Connectivity Checks: "clock_divider:clk_1k|n_bit_counter:COUNT32_DIV"
+ 26. Port Connectivity Checks: "clock_divider:clk_1k"
+ 27. Port Connectivity Checks: "counter:C3"
+ 28. Port Connectivity Checks: "counter:C2"
+ 29. Port Connectivity Checks: "counter:C1"
+ 30. Port Connectivity Checks: "counter:C0"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,7 +65,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Aug 08 01:10:53 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Aug 08 08:21:13 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; UpCounter_Top                               ;
 ; Top-level Entity Name              ; UpCounter_Top                               ;
@@ -59,7 +74,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 14                                          ;
 ;     Dedicated logic registers      ; 4                                           ;
 ; Total registers                    ; 4                                           ;
-; Total pins                         ; 34                                          ;
+; Total pins                         ; 36                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -205,14 +220,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 4               ;
 ;     -- I/O registers                        ; 0               ;
 ;                                             ;                 ;
-; I/O pins                                    ; 34              ;
+; I/O pins                                    ; 36              ;
 ;                                             ;                 ;
 ; Embedded Multiplier 9-bit elements          ; 0               ;
 ;                                             ;                 ;
 ; Maximum fan-out node                        ; counter:C0|Q[0] ;
 ; Maximum fan-out                             ; 12              ;
-; Total fan-out                               ; 125             ;
-; Average fan-out                             ; 1.45            ;
+; Total fan-out                               ; 127             ;
+; Average fan-out                             ; 1.41            ;
 +---------------------------------------------+-----------------+
 
 
@@ -221,7 +236,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name       ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+---------------+--------------+
-; |UpCounter_Top             ; 14 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 34   ; 0            ; 0          ; |UpCounter_Top            ; UpCounter_Top ; work         ;
+; |UpCounter_Top             ; 14 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 36   ; 0            ; 0          ; |UpCounter_Top            ; UpCounter_Top ; work         ;
 ;    |counter:C0|            ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |UpCounter_Top|counter:C0 ; counter       ; work         ;
 ;    |decoder:D0|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |UpCounter_Top|decoder:D0 ; decoder       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+---------------+--------------+
@@ -273,13 +288,185 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_divider:clk_1k ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_divider:clk_1k|n_bit_counter:COUNT32_DIV ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_divider:clk_1k|comparator:COMPARE32_DIV ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_divider:clk_10 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; N              ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_divider:clk_10|n_bit_counter:COUNT32_DIV ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clock_divider:clk_10|comparator:COMPARE32_DIV ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: up_timer:T1 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; N              ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: up_timer:T1|n_bit_counter:timer32 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: up_timer:T1|comparator:compare32Timer ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: n_bit_counter:BCD_0 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; N              ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "n_bit_counter:BCD_0"                                                                                                                                                                          ;
++-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; max_count       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; max_count[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; count           ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (16 bits) it drives.  The 12 most-significant bit(s) in the port expression will be connected to GND.            ;
+; count[3..0]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "up_timer:T1"                                                                                                                                    ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                        ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; stop  ; Input  ; Warning  ; Input port expression (7 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "stop[31..7]" will be connected to GND. ;
+; start ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                            ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:clk_10"                                                                                                                                                                          ;
++-------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; divide_by[18..17] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[8..7]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[4..0]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[31..22] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[20..19] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[16..14] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[12..11] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[6..5]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[21]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[13]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[10]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[9]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; reset             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1]         ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clock_divider:U0"                                                                     ;
+; Port Connectivity Checks: "clock_divider:clk_1k|comparator:COMPARE32_DIV"                                        ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_1k ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enable ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:clk_1k|n_bit_counter:COUNT32_DIV"                                                                                                                                         ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:clk_1k"                                                                                                                                                                          ;
++-------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; divide_by[14..13] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[8..7]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[2..0]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; divide_by[31..15] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[12..9]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[4..3]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[6]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; divide_by[5]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; reset             ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1]         ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------+
@@ -323,7 +510,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 34                          ;
+; boundary_port         ; 36                          ;
 ; cycloneiii_ff         ; 4                           ;
 ;     ENA               ; 4                           ;
 ; cycloneiii_lcell_comb ; 16                          ;
@@ -354,7 +541,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Aug 08 01:10:40 2020
+    Info: Processing started: Sat Aug 08 08:21:01 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UpCounter -c UpCounter_Top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -364,31 +551,49 @@ Info (12021): Found 1 design units, including 1 entities, in source file counter
     Info (12023): Found entity 1: counter File: C:/Users/ML/Documents/GitHub/Stopwatch/counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
     Info (12023): Found entity 1: decoder File: C:/Users/ML/Documents/GitHub/Stopwatch/decoder.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.v
-    Info (12023): Found entity 1: clock_divider File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 1
+Info (12021): Found 6 design units, including 6 entities, in source file clock_divider.v
+    Info (12023): Found entity 1: comparator File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 1
+    Info (12023): Found entity 2: d_flip_flop File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 17
+    Info (12023): Found entity 3: n_bit_counter File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 32
+    Info (12023): Found entity 4: clock_divider File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 54
+    Info (12023): Found entity 5: up_timer File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 75
+    Info (12023): Found entity 6: shiftRegister File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 93
 Info (12127): Elaborating entity "UpCounter_Top" for the top level hierarchy
-Info (12128): Elaborating entity "counter" for hierarchy "counter:C0" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 18
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:D0" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 34
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:U0" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 48
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "counter" for hierarchy "counter:C0" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 22
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:D0" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 35
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:clk_1k" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 47
+Info (12128): Elaborating entity "n_bit_counter" for hierarchy "clock_divider:clk_1k|n_bit_counter:COUNT32_DIV" File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 65
+Info (12128): Elaborating entity "comparator" for hierarchy "clock_divider:clk_1k|comparator:COMPARE32_DIV" File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 68
+Warning (10235): Verilog HDL Always Construct warning at clock_divider.v(9): variable "compare_count" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 9
+Info (12128): Elaborating entity "d_flip_flop" for hierarchy "clock_divider:clk_1k|d_flip_flop:DFF" File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 71
+Info (12128): Elaborating entity "shiftRegister" for hierarchy "shiftRegister:Shift" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 49
+Info (12128): Elaborating entity "up_timer" for hierarchy "up_timer:T1" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 51
+Info (12128): Elaborating entity "n_bit_counter" for hierarchy "n_bit_counter:BCD_0" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 53
+Warning (10230): Verilog HDL assignment warning at clock_divider.v(45): truncated value with size 32 to match size of target (4) File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 45
+Warning (12020): Port "ordered port 1" on the entity instantiation of "COUNT32_DIV" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 65
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clock_divider:clk_1k|_" is missing source, defaulting to GND File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 47
+Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "decimalPoint" is stuck at GND File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 7
+    Warning (13410): Pin "decimalPoint" is stuck at GND File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/ML/Documents/GitHub/Stopwatch/output_files/UpCounter_Top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 2
-    Warning (15610): No output dependent on input pin "clk_50M" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 5
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+    Warning (15610): No output dependent on input pin "clk_50M" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 6
+    Warning (15610): No output dependent on input pin "timerSW" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 5
+    Warning (15610): No output dependent on input pin "LEDR" File: C:/Users/ML/Documents/GitHub/Stopwatch/UpCounter_Top.v Line: 7
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 14 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4754 megabytes
-    Info: Processing ended: Sat Aug 08 01:10:53 2020
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Sat Aug 08 08:21:13 2020
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +------------------------------------------+

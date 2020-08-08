@@ -1,5 +1,5 @@
 Timing Analyzer report for UpCounter_Top
-Sat Aug 08 01:11:11 2020
+Sat Aug 08 08:21:29 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -91,14 +91,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.9%      ;
-;     Processor 3            ;   0.9%      ;
-;     Processor 4            ;   0.9%      ;
+;     Processor 2            ;   0.8%      ;
+;     Processor 3            ;   0.7%      ;
+;     Processor 4            ;   0.7%      ;
 +----------------------------+-------------+
 
 
@@ -116,7 +116,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 616.14 MHz ; 250.0 MHz       ; KEY[0]     ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 616.52 MHz ; 250.0 MHz       ; KEY[0]     ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -126,7 +126,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------+-------------------+
 ; Clock  ; Slack  ; End Point TNS     ;
 +--------+--------+-------------------+
-; KEY[0] ; -0.623 ; -1.550            ;
+; KEY[0] ; -0.622 ; -1.520            ;
 +--------+--------+-------------------+
 
 
@@ -166,13 +166,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                        ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
-; 673.4 MHz ; 250.0 MHz       ; KEY[0]     ; limit due to minimum period restriction (max I/O toggle rate) ;
-+-----------+-----------------+------------+---------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 678.89 MHz ; 250.0 MHz       ; KEY[0]     ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -181,7 +181,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------+------------------+
 ; Clock  ; Slack  ; End Point TNS    ;
 +--------+--------+------------------+
-; KEY[0] ; -0.485 ; -1.155           ;
+; KEY[0] ; -0.473 ; -1.121           ;
 +--------+--------+------------------+
 
 
@@ -226,7 +226,7 @@ No synchronizer chains to report.
 +--------+-------+-------------------+
 ; Clock  ; Slack ; End Point TNS     ;
 +--------+-------+-------------------+
-; KEY[0] ; 0.324 ; 0.000             ;
+; KEY[0] ; 0.325 ; 0.000             ;
 +--------+-------+-------------------+
 
 
@@ -256,7 +256,7 @@ No paths to report.
 +--------+--------+--------------------------------+
 ; Clock  ; Slack  ; End Point TNS                  ;
 +--------+--------+--------------------------------+
-; KEY[0] ; -3.000 ; -7.308                         ;
+; KEY[0] ; -3.000 ; -7.288                         ;
 +--------+--------+--------------------------------+
 
 
@@ -271,10 +271,10 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -0.623 ; 0.166 ; N/A      ; N/A     ; -3.000              ;
-;  KEY[0]          ; -0.623 ; 0.166 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -1.55  ; 0.0   ; 0.0      ; 0.0     ; -8.612              ;
-;  KEY[0]          ; -1.550 ; 0.000 ; N/A      ; N/A     ; -8.612              ;
+; Worst-case Slack ; -0.622 ; 0.166 ; N/A      ; N/A     ; -3.000              ;
+;  KEY[0]          ; -0.622 ; 0.166 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -1.52  ; 0.0   ; 0.0      ; 0.0     ; -8.612              ;
+;  KEY[0]          ; -1.520 ; 0.000 ; N/A      ; N/A     ; -8.612              ;
 +------------------+--------+-------+----------+---------+---------------------+
 
 
@@ -323,6 +323,8 @@ No synchronizer chains to report.
 +---------------------+-----------------------+-----------------+-----------------+
 ; KEY[1]              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; clk_50M             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; timerSW             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; LEDR                ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; reset               ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; KEY[0]              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; SW                  ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
@@ -603,7 +605,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Aug 08 01:11:08 2020
+    Info: Processing started: Sat Aug 08 08:21:27 2020
 Info: Command: quartus_sta UpCounter -c UpCounter_Top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -620,10 +622,10 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.623
+Info (332146): Worst-case setup slack is -0.622
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.623              -1.550 KEY[0] 
+    Info (332119):    -0.622              -1.520 KEY[0] 
 Info (332146): Worst-case hold slack is 0.378
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -639,10 +641,10 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.485
+Info (332146): Worst-case setup slack is -0.473
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.485              -1.155 KEY[0] 
+    Info (332119):    -0.473              -1.121 KEY[0] 
 Info (332146): Worst-case hold slack is 0.339
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -655,10 +657,10 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):    -3.000              -8.612 KEY[0] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332146): Worst-case setup slack is 0.324
+Info (332146): Worst-case setup slack is 0.325
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.324               0.000 KEY[0] 
+    Info (332119):     0.325               0.000 KEY[0] 
 Info (332146): Worst-case hold slack is 0.166
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -669,13 +671,13 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -7.308 KEY[0] 
+    Info (332119):    -3.000              -7.288 KEY[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Sat Aug 08 01:11:11 2020
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Sat Aug 08 08:21:29 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

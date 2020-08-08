@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Aug 08 01:11:03 2020
+Fitter Status : Successful - Sat Aug 08 08:21:21 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : UpCounter_Top
 Top-level Entity Name : UpCounter_Top
@@ -9,7 +9,7 @@ Total logic elements : 15 / 49,760 ( < 1 % )
     Total combinational functions : 15 / 49,760 ( < 1 % )
     Dedicated logic registers : 4 / 49,760 ( < 1 % )
 Total registers : 4
-Total pins : 34 / 360 ( 9 % )
+Total pins : 36 / 360 ( 10 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

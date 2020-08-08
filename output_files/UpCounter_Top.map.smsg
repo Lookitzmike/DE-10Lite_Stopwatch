@@ -1,1 +1,2 @@
 Warning (10268): Verilog HDL information at counter.v(6): always construct contains both blocking and non-blocking assignments File: C:/Users/ML/Documents/GitHub/Stopwatch/counter.v Line: 6
+Warning (10268): Verilog HDL information at clock_divider.v(21): always construct contains both blocking and non-blocking assignments File: C:/Users/ML/Documents/GitHub/Stopwatch/clock_divider.v Line: 21

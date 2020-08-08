@@ -1,5 +1,5 @@
 Fitter report for UpCounter_Top
-Sat Aug 08 01:11:03 2020
+Sat Aug 08 08:21:21 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Aug 08 01:11:03 2020       ;
+; Fitter Status                      ; Successful - Sat Aug 08 08:21:21 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; UpCounter_Top                               ;
 ; Top-level Entity Name              ; UpCounter_Top                               ;
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 15 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 4 / 49,760 ( < 1 % )                        ;
 ; Total registers                    ; 4                                           ;
-; Total pins                         ; 34 / 360 ( 9 % )                            ;
+; Total pins                         ; 36 / 360 ( 10 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -165,8 +165,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 106 ) ; 0.00 % ( 0 / 106 )         ; 0.00 % ( 0 / 106 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 106 ) ; 0.00 % ( 0 / 106 )         ; 0.00 % ( 0 / 106 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 110 ) ; 0.00 % ( 0 / 110 )         ; 0.00 % ( 0 / 110 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 110 ) ; 0.00 % ( 0 / 110 )         ; 0.00 % ( 0 / 110 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -189,7 +189,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 90 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 94 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -226,7 +226,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 2 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 34 / 360 ( 9 % )      ;
+; I/O pins                                    ; 36 / 360 ( 10 % )     ;
 ;     -- Clock pins                           ; 0 / 8 ( 0 % )         ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )       ;
 ;                                             ;                       ;
@@ -244,12 +244,12 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; Remote update blocks                        ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 0.5% / 0.4% / 0.6%    ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.6% / 0.5%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
-; Total fan-out                               ; 136                   ;
-; Average fan-out                             ; 1.28                  ;
+; Total fan-out                               ; 138                   ;
+; Average fan-out                             ; 1.25                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -284,7 +284,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; Total LABs:  partially or completely used   ; 2 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 34                   ; 0                              ;
+; I/O pins                                    ; 36                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )      ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -298,7 +298,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 142                  ; 8                              ;
+;     -- Total Connections                    ; 144                  ; 8                              ;
 ;     -- Registered Connections               ; 42                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -306,7 +306,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 5                    ; 0                              ;
+;     -- Input Ports                          ; 7                    ; 0                              ;
 ;     -- Output Ports                         ; 29                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
@@ -331,11 +331,13 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; KEY[0]  ; A7    ; 7        ; 49           ; 54           ; 28           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; KEY[1]  ; B8    ; 7        ; 46           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; KEY[0]  ; B8    ; 7        ; 46           ; 54           ; 28           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; KEY[1]  ; A7    ; 7        ; 49           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; LEDR    ; D13   ; 7        ; 56           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; SW      ; F15   ; 7        ; 69           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; clk_50M ; H19   ; 6        ; 78           ; 45           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; reset   ; C11   ; 7        ; 51           ; 54           ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; clk_50M ; AB3   ; 3        ; 22           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; reset   ; B14   ; 7        ; 56           ; 54           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; timerSW ; C10   ; 7        ; 51           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -400,11 +402,11 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; 1A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ;
 ; 1B       ; 4 / 24 ( 17 % )  ; 2.5V          ; --           ;
 ; 2        ; 0 / 36 ( 0 % )   ; 2.5V          ; --           ;
-; 3        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
+; 3        ; 1 / 48 ( 2 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )   ; 2.5V          ; --           ;
-; 6        ; 15 / 60 ( 25 % ) ; 2.5V          ; --           ;
-; 7        ; 19 / 52 ( 37 % ) ; 2.5V          ; --           ;
+; 6        ; 14 / 60 ( 23 % ) ; 2.5V          ; --           ;
+; 7        ; 21 / 52 ( 40 % ) ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % )  ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -420,7 +422,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; A4       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 445        ; 7        ; KEY[0]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A7       ; 445        ; 7        ; KEY[1]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A8       ; 447        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A9       ; 449        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A10      ; 439        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -460,7 +462,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; AA22     ; 247        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AB1      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; AB2      ; 145        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AB3      ; 147        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; AB3      ; 147        ; 3        ; clk_50M                                        ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB4      ; 155        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB5      ; 159        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB6      ; 161        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -487,13 +489,13 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; B5       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B7       ; 469        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B8       ; 451        ; 7        ; KEY[1]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B8       ; 451        ; 7        ; KEY[0]                                         ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B11      ; 443        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B12      ; 441        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; B14      ; 427        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; B14      ; 427        ; 7        ; reset                                          ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B15      ; 423        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
 ; B16      ; 417        ; 7        ; Seg7[10]                                       ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B17      ; 402        ; 7        ; Seg7[13]                                       ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -511,8 +513,8 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; C7       ; 467        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C8       ; 465        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C9       ; 450        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; C10      ; 442        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; C11      ; 440        ; 7        ; reset                                          ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C10      ; 442        ; 7        ; timerSW                                        ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C11      ; 440        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C12      ; 436        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C13      ; 426        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C14      ; 424        ; 7        ; Seg7[0]                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
@@ -536,7 +538,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; D10      ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D12      ; 438        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; D13      ; 431        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; D13      ; 431        ; 7        ; LEDR                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D14      ; 428        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D15      ; 404        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D16      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -630,7 +632,7 @@ The pin-out file can be found in C:/Users/ML/Documents/GitHub/Stopwatch/output_f
 ; H16      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H17      ; 384        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H18      ; 374        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; H19      ; 372        ; 6        ; clk_50M                                        ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H19      ; 372        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H20      ; 375        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H21      ; 323        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H22      ; 321        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -938,6 +940,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Seg7[26]     ; Incomplete set of assignments ;
 ; Seg7[27]     ; Incomplete set of assignments ;
 ; decimalPoint ; Incomplete set of assignments ;
+; timerSW      ; Incomplete set of assignments ;
+; LEDR         ; Incomplete set of assignments ;
 ; reset        ; Incomplete set of assignments ;
 ; KEY[0]       ; Incomplete set of assignments ;
 ; SW           ; Incomplete set of assignments ;
@@ -950,7 +954,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name       ; Entity Name   ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------+---------------+--------------+
-; |UpCounter_Top             ; 15 (1)      ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 34   ; 0            ; 11 (1)       ; 0 (0)             ; 4 (0)            ; 0          ; |UpCounter_Top            ; UpCounter_Top ; work         ;
+; |UpCounter_Top             ; 15 (1)      ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 36   ; 0            ; 11 (1)       ; 0 (0)             ; 4 (0)            ; 0          ; |UpCounter_Top            ; UpCounter_Top ; work         ;
 ;    |counter:C0|            ; 7 (7)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (4)            ; 0          ; |UpCounter_Top|counter:C0 ; counter       ; work         ;
 ;    |decoder:D0|            ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |UpCounter_Top|decoder:D0 ; decoder       ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------+---------------+--------------+
@@ -993,8 +997,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Seg7[26]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; Seg7[27]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; decimalPoint ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; reset        ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; KEY[0]       ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; timerSW      ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; LEDR         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; reset        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; KEY[0]       ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; SW           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1006,17 +1012,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------+-------------------+---------+
 ; KEY[1]                   ;                   ;         ;
 ; clk_50M                  ;                   ;         ;
+; timerSW                  ;                   ;         ;
+; LEDR                     ;                   ;         ;
 ; reset                    ;                   ;         ;
-;      - counter:C0|Q~0    ; 0                 ; 6       ;
-;      - counter:C0|Q[3]~1 ; 0                 ; 6       ;
-;      - counter:C0|Q~3    ; 0                 ; 6       ;
-;      - counter:C0|Q~4    ; 0                 ; 6       ;
-;      - counter:C0|Q~5    ; 0                 ; 6       ;
+;      - counter:C0|Q~0    ; 1                 ; 6       ;
+;      - counter:C0|Q[3]~1 ; 1                 ; 6       ;
+;      - counter:C0|Q~3    ; 1                 ; 6       ;
+;      - counter:C0|Q~4    ; 1                 ; 6       ;
+;      - counter:C0|Q~5    ; 1                 ; 6       ;
 ; KEY[0]                   ;                   ;         ;
-;      - counter:C0|Q[0]   ; 0                 ; 0       ;
-;      - counter:C0|Q[1]   ; 0                 ; 0       ;
-;      - counter:C0|Q[2]   ; 0                 ; 0       ;
-;      - counter:C0|Q[3]   ; 0                 ; 0       ;
+;      - counter:C0|Q[0]   ; 1                 ; 0       ;
+;      - counter:C0|Q[1]   ; 1                 ; 0       ;
+;      - counter:C0|Q[2]   ; 1                 ; 0       ;
+;      - counter:C0|Q[3]   ; 1                 ; 0       ;
 ; SW                       ;                   ;         ;
 ;      - counter:C0|Q[3]~1 ; 0                 ; 6       ;
 +--------------------------+-------------------+---------+
@@ -1027,8 +1035,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name              ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; KEY[0]            ; PIN_A7             ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; counter:C0|Q[3]~1 ; LCCOMB_X50_Y53_N14 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; KEY[0]            ; PIN_B8             ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; counter:C0|Q[3]~1 ; LCCOMB_X47_Y53_N26 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +-------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1037,15 +1045,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 39 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 9 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 51 / 106,704 ( < 1 % ) ;
-; Direct links          ; 6 / 148,641 ( < 1 % )  ;
+; Block interconnects   ; 40 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 14 / 5,382 ( < 1 % )   ;
+; C4 interconnects      ; 37 / 106,704 ( < 1 % ) ;
+; Direct links          ; 5 / 148,641 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
 ; Local interconnects   ; 7 / 49,760 ( < 1 % )   ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 9 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 35 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 13 / 5,406 ( < 1 % )   ;
+; R4 interconnects      ; 44 / 147,764 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -1194,9 +1202,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 33           ; 0            ; 33           ; 0            ; 0            ; 34        ; 33           ; 0            ; 34        ; 34        ; 0            ; 29           ; 0            ; 0            ; 5            ; 0            ; 29           ; 5            ; 0            ; 0            ; 0            ; 29           ; 0            ; 0            ; 0            ; 0            ; 0            ; 34        ; 0            ; 0            ;
+; Total Pass         ; 35           ; 0            ; 35           ; 0            ; 0            ; 36        ; 35           ; 0            ; 36        ; 36        ; 0            ; 29           ; 0            ; 0            ; 7            ; 0            ; 29           ; 7            ; 0            ; 0            ; 0            ; 29           ; 0            ; 0            ; 0            ; 0            ; 0            ; 36        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 1            ; 34           ; 1            ; 34           ; 34           ; 0         ; 1            ; 34           ; 0         ; 0         ; 34           ; 5            ; 34           ; 34           ; 29           ; 34           ; 5            ; 29           ; 34           ; 34           ; 34           ; 5            ; 34           ; 34           ; 34           ; 34           ; 34           ; 0         ; 34           ; 34           ;
+; Total Inapplicable ; 1            ; 36           ; 1            ; 36           ; 36           ; 0         ; 1            ; 36           ; 0         ; 0         ; 36           ; 7            ; 36           ; 36           ; 29           ; 36           ; 7            ; 29           ; 36           ; 36           ; 36           ; 7            ; 36           ; 36           ; 36           ; 36           ; 36           ; 0         ; 36           ; 36           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; KEY[1]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk_50M            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1229,6 +1237,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Seg7[26]           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Seg7[27]           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; decimalPoint       ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; timerSW            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LEDR               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; reset              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW                 ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1308,7 +1318,7 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 1 pins of 34 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 1 pins of 36 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'UpCounter_Top.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1329,9 +1339,9 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  48 pins available
         Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
         Info (176213): I/O bank number 6 does not use VREF pins and has 2.5V VCCIO pins. 14 total pin(s) used --  46 pins available
-        Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 19 total pin(s) used --  33 pins available
+        Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 21 total pin(s) used --  31 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1344,7 +1354,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.07 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1352,9 +1362,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/ML/Documents/GitHub/Stopwatch/output_files/UpCounter_Top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5547 megabytes
-    Info: Processing ended: Sat Aug 08 01:11:03 2020
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 5550 megabytes
+    Info: Processing ended: Sat Aug 08 08:21:22 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:11
 
 
